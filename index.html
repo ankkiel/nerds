@@ -10,7 +10,6 @@
     <a class="main-nav__logo" href="/">
       <img class="main-nav__img" src="" alt="Логотип">
     </a>
-    <h1 class="visually-hidden">Нёрдс</h1>
     <ul class="main-nav__list">
       <li class="main-nav__item"><a class="main-nav__link" href="studio.html">Студия</a></li>
       <li class="main-nav__item"><a class="main-nav__link" href="clients.html">Клиенты</a></li>
@@ -21,32 +20,33 @@
   </nav>
 </header>
 <main class="main-content">
+  <h1 class="visually-hidden">Нёрдс - дизайн студия</h1>
   <section class="slider">
-    <h2 class="visually-hidden">Слайдер с преимуществами</h2>
+    <h2 class="slider__title visually-hidden">Преимущества</h2>
     <input class="visually-hidden" type="radio" id="dot-1" name="toggle" checked>
     <input class="visually-hidden" type="radio" id="dot-2" name="toggle">
     <input class="visually-hidden" type="radio" id="dot-3" name="toggle">
 
     <div class="dot slider__navigation">
-      <label class="dot__item dot--1" for="dot-1">Первый слайд</label>
-      <label class="dot__item dot--2" for="dot-2">Второй слайд</label>
-      <label class="dot__item dot--3" for="dot-3">Третий слайд</label>
+      <label class="dot__item dot__item--1" for="dot-1">Первый слайд</label>
+      <label class="dot__item dot__item--2" for="dot-2">Второй слайд</label>
+      <label class="dot__item dot__item--3" for="dot-3">Третий слайд</label>
     </div>
     <ul class="slider__list">
       <li class="slider__item slider__item--slide-1">
-        <h2>Долго, дорого, скрупулезно</h2>
+        <h3 class="slider__title">Долго, дорого, скрупулезно.</h3>
         <img class="slider__img" src="" alt="Изображение слайда">
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
         <a class="slider__link link" href="#">Узнай больше</a>
       </li>
       <li class="slider__item slider__item--slide-2 visually-hidden">
-        <h2>Любим математику как никто другой</h2>
+        <h3 class="slider__title">Любим математику как никто другой</h3>
         <img class="slider__img" src="" alt="Изображение слайда">
         <p>Никакого креатива, только математические формулы для расчета и</p>
         <a class="slider__link link" href="#">Узнай больше</a>
       </li>
       <li class="slider__item slider__item--slide-3 visually-hidden">
-        <h2>Только ночь, только хардкор</h2>
+        <h3 class="slider__title">Только ночь, только хардкор</h3>
         <img class="slider__img" src="" alt="Изображение слайда">
         <p>Работать днем, как все? Мы против этого. Ближе к полуночи работ</p>
         <a class="slider__link link" href="#">Узнай больше</a>
@@ -54,38 +54,40 @@
     </ul>
   </section>
   <section class="services">
+    <h2 class="services__title visually-hidden">Услуги</h2>
     <ul class="services__list">
-      <li class="services__item">
-        <div class="services__img services__img--red"></div>
-        <div class="services__block">
+      <li class="services__item services-item">
+        <div class="services-item__img services-item__img--red"></div>
+        <div class="services-item__block">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <button class="services__btn services__btn--red">Заказать</button>
+          <button class="services-item__btn services-item__btn--red">Заказать</button>
         </div>
       </li>
-      <li class="services__item">
-        <div class="services__img services__img--green"></div>
-        <div class="services__block">
+      <li class="services__item services-item">
+        <div class="services-item__img services-item__img--green"></div>
+        <div class="services-item__block">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-          <button class="services__btn services__btn--green">Заказать</button>
+          <button class="services-item__btn services-item__btn--green">Заказать</button>
         </div>
       </li>
-      <li class="services__item">
-        <div class="services__img services__img--yellow"></div>
-        <div class="services__block">
+      <li class="services__item services-item">
+        <div class="services-item__img services-item__img--yellow"></div>
+        <div class="services-item__block">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <button class="services__btn services__btn--yellow">Заказать</button>
+          <button class="services-item__btn services-item__btn--yellow">Заказать</button>
         </div>
       </li>
     </ul>
   </section>
   <section class="about-us">
-    <h2 class="about-us__title">Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
+    <h2 class="about-us__title visually-hidden">О нас</h2>
+    <p class="about-us__tagline">Мы-маленькая, но гордая дизайн-студия из Краснодара.</p>
     <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
       рук, как роботы.</p>
-    <h3>Выполняем заказы на разработку:</h3>
+    <p>Выполняем заказы на разработку:</p>
     <ul class="about-us__list">
       <li class="about-us__item">Веб-сайты любой сложности</li>
       <li class="about-us__item">Мобильных приложений для iOS и Android</li>
@@ -116,6 +118,7 @@
     </table>
   </aside>
   <section class="partners">
+    <h2 class="partners__title visually-hidden">Наши партнеры</h2>
     <ul class="partners__list">
       <li class="partners__item"><a href="#" class="partners__link"><img src="" alt="borodinski"></a></li>
       <li class="partners__item"><a href="#" class="partners__link"><img src="" alt="htmlacademy"></a></li>
@@ -125,13 +128,16 @@
   </section>
 </main>
 <footer class="main-footer">
+  <h2 class="main-footer__title visually-hidden">Контактная информация</h2>
   <section class="map">
+    <h3 class="map__title">Nerds design studio</h3>
     <a class="map__link" href="map.html">
       <span class="visually-hidden">Карта</span>
       <img src="" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
     </a>
   </section>
   <section class="contacts">
+    <h3 class="contacts__title visually-hidden">Наши социальные сети</h3>
     <ul class="contacts__list">
       <li class="contacts__item">
         <svg></svg>
