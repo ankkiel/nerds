@@ -2,22 +2,146 @@
   font-style: normal;
   font-weight: 400;
   font-family: "Roboto";
-  src: url("../fonts/roboto-v20-latin-400.woff2");
-  src: local("Roboto"), url("../fonts/roboto-v20-latin-400.woff") format("woff");
-}
 
+  src: url("../fonts/Roboto-Regular.woff2");
+  src: local("Roboto"), url("../fonts/Roboto-Regular.woff") format("woff");
+}
 @font-face {
   font-style: normal;
   font-weight: 500;
   font-family: "Roboto";
-  src: url("../fonts/roboto-v20-latin-500.woff2");
-  src: local("Roboto"), url("../fonts/roboto-v20-latin-500.woff") format("woff");
-}
 
+  src: url("../fonts/Roboto-Medium.woff2");
+  src: local("Roboto"), url("../fonts/Roboto-Medium.woff") format("woff");
+}
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-family: "Roboto";
-  src: url("../fonts/roboto-v20-latin-700.woff2");
-  src: local("Roboto"), url("../fonts/roboto-v20-latin-700.woff") format("woff");
+
+  src: url("../fonts/Roboto-Bold.woff2");
+  src: local("Roboto"), url("../fonts/Roboto-Bold.woff") format("woff");
 }
+/* Базовые стили (начало) */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #000000;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: visible;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+/* Базовые стили (конец) */
+
+/* Стили header (начало) */
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-nav__logo {
+  width: 160px;
+}
+
+.main-nav__logo:hover,
+.main-nav__logo:focus {
+  opacity: 0.8;
+}
+
+.main-nav__logo:active {
+  opacity: 0.3;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 49px;
+  text-align: center;
+}
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  margin-right: 45px;
+}
+.main-nav__item:first-child{
+  margin-left: 202px;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 12px 0 3px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+.main-nav__link:hover,
+.main-nav__link:focus {
+  color: #fb565a;
+}
+
+.main-nav__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__link:active {
+  border-bottom: 2px solid #fb565a;
+}
+
+.main-nav__item:last-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.main-nav__link--basket:before {
+  content: url("../img/basket-icon.svg");
+  width: 15px;
+  height: 15px;
+  margin-right: 26px;
+  opacity: 0.3;
+}
+/* Стили header (конец) */
