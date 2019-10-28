@@ -1,6 +1,6 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Анастасия Ермолова](https://https://github.com/AnastasiaErm).
+* Студент: [Анастасия Ермолова](https://github.com/AnastasiaErm).
 
 ---
 
