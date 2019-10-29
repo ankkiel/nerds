@@ -646,6 +646,21 @@ a {
 
 }
 
+.contacts__button:hover,
+.social__button:focus {
+  background-color: #e74246;
+}
+
+.contacts__button:active {
+  background-color: #d7373b;
+}
+
+.contacts__button:active svg {
+  opacity: 0.3;
+
+  transition: all 0.4s;
+}
+
 .contacts__text {
   margin: 0;
   margin-left: 127px;
