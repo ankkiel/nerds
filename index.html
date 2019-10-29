@@ -151,20 +151,19 @@
 <footer class="main-footer">
   <h2 class="main-footer__title visually-hidden">Контактная информация</h2>
   <section class="map">
+    <div class="container">
     <div class="map__information map-information">
-      <h3 class="map-information__title">Nerds design studio</h3>
-      <p class="map-information__address">
-        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </p>
-      <p class="map-information__tel">
-        тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-      </p>
-      <a class="map-information__button map-information__button--red" href="form.html">Напишите нам</a>
+        <h3 class="map-information__title">Nerds design studio</h3>
+        <p class="map-information__address">
+          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p class="map-information__tel">
+          тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+        </p>
+        <a class="button map-information__button button--red" href="form.html">Напишите нам</a>
+      </div>
     </div>
-    <a class="map__link" href="map.html">
-      <span class="visually-hidden">Карта</span>
-      <img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная д.19/8, Санкт-Петербург">
-    </a>
+    <div class="map__content" id="map"></div>
   </section>
   <section class="contacts">
     <h3 class="contacts__title visually-hidden">Наши социальные сети</h3>
@@ -226,5 +225,7 @@
     </svg>
   </button>
 </section>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=29b07bac-3c67-49d6-95bb-206549100c7d&lang=ru_RU"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

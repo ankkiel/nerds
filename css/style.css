@@ -546,3 +546,68 @@ a {
 }
 
 /* Стили секции partners (конец) */
+
+.main-footer {
+  margin-top: 80px;
+}
+
+.map {
+  position: relative;
+}
+
+.map-information {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+
+  width: 319px;
+  padding: 0;
+  padding-top: 55px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+
+  background-color: #ffffff;
+  transform: translateY(-50%);
+}
+
+.map-information__title {
+  margin: 0;
+  margin-bottom: 23px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.map-information__address, .map-information__tel {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.map-information__address {
+  width: 96%;
+  margin-bottom: 17px;
+}
+
+.map-information__tel {
+  margin-bottom: 38px;
+}
+
+.map-information__button {
+  width: 100%;
+}
+
+.map__content {
+  width: 100%;
+  min-height: 416px;
+
+  background-image: url("../img/map-marker.png"), url("../img/map.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 28% right 34%, center;
+  background-size: 10%, cover;
+}
