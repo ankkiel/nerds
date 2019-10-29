@@ -547,10 +547,12 @@ a {
 
 /* Стили секции partners (конец) */
 
+
 .main-footer {
   margin-top: 80px;
 }
 
+/* Стили секции map (начало) */
 .map {
   position: relative;
 }
@@ -611,3 +613,57 @@ a {
   background-position: bottom 28% right 34%, center;
   background-size: 10%, cover;
 }
+
+/* Стили секции map (конец) */
+
+/* Стили секции contacts (начало) */
+.contacts__wrapper {
+  display: flex;
+  padding: 69px 0;
+}
+
+.contacts__list {
+  display: flex;
+  flex-basis: 246px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.contacts__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 79px;
+  height: 79px;
+  margin-right: 12px;
+  padding: 0;
+
+  background-color: #e1e1e1;
+  border-radius: 50%;
+
+}
+
+.contacts__text {
+  margin: 0;
+  margin-left: 127px;
+  padding-top: 7px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.contacts__offer {
+  display: block;
+  margin-top: 12px;
+
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* Стили секции contacts (конец) */
