@@ -763,3 +763,126 @@ a {
 }
 
 /* Стили секции contacts (конец) */
+
+/* Стили секции popup (конец) */
+.popup {
+  position: fixed;
+  bottom: 180px;
+  left: 50%;
+  z-index: 1111;
+
+  display: none;
+  box-sizing: border-box;
+
+  width: 100%;
+  max-width: 960px;
+  padding: 73px 100px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  transform: translateX(-50%);
+}
+
+.popup__title {
+  margin: 0;
+  margin-bottom: 49px;
+
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.popup__group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.popup__label,
+.popup__input,
+.popup__textarea {
+  display: block;
+  box-sizing: border-box;
+}
+
+.popup__label {
+  width: 100%;
+  max-width: 360px;
+  margin-bottom: 12px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+
+}
+
+.popup__input {
+  width: 100%;
+  max-width: 360px;
+  margin-top: 12px;
+  padding: 15px;
+
+  font-weight: 400;
+
+  border: 2px solid #d7dcde;
+}
+
+.popup__textarea {
+  width: 100%;
+  height: 118px;
+  margin-top: 12px;
+  margin-bottom: 47px;
+  padding: 15px;
+
+  border: 2px solid #d7dcde;
+
+  resize: none;
+}
+
+.popup__submit {
+  width: 260px;
+}
+
+.popup__close {
+  position: absolute;
+
+  top: 78px;
+  right: 90px;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popup__close svg {
+  opacity: 0.3;
+}
+
+.popup__close:hover svg,
+.popup__close:focus svg {
+  opacity: 1;
+}
+
+.popup__close:active svg {
+  opacity: 0.1;
+}
+
+.popup__textarea:hover,
+.popup__input:hover {
+  border: solid 2px #b4b9bb;
+}
+
+.popup__textarea:focus,
+.popup__input:focus {
+  color: #000000;
+
+  border: solid 2px #000000;
+  outline: none;
+}
+
+.popup--close {
+  display: block;
+}
+
+/* Стили секции popup (конец) */
