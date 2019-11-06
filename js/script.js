@@ -30,7 +30,7 @@ ymaps.ready(function () {
       iconImageSize: [231, 190],
       // Смещение левого верхнего угла иконки относительно
       // её "ножки" (точки привязки).
-      iconImageOffset: [-70, -190]
+      iconImageOffset: [-85, -190]
     })
   myMap.behaviors
     .disable(["rightMouseButtonMagnifier", "scrollZoom"])
