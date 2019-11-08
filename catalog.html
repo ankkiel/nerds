@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="inner-page">
+<body class="catalog-page">
 <header class="header">
   <div class="container">
     <nav class="nav">
@@ -16,7 +16,7 @@
       <ul class="nav__list nav__list--main">
         <li class="nav__item"><a class="nav__link" href="#">Студия</a></li>
         <li class="nav__item"><a class="nav__link" href="#">Клиенты</a></li>
-        <li class="nav__item"><a class="nav__link active" href="catalog.html">Магазин</a></li>
+        <li class="nav__item"><a class="nav__link nav__link--active" href="catalog.html">Магазин</a></li>
         <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
       </ul>
       <ul class="nav__list nav__list--custom">
@@ -26,8 +26,8 @@
     <h1 class="header__title">Магазин готовых шаблонов</h1>
   </div>
 </header>
-<aside class="filter">
-  <div class="container">
+<div class="catalog-page__wrapper container">
+  <aside class="filter">
     <form class="filter__form" action="https://echo.htmlacademy.ru/" method="post">
       <h2 class="filter__title visually-hidden">Фильтр товаров</h2>
       <fieldset class="group">
@@ -42,8 +42,8 @@
             </div>
           </div>
           <div class="range-cost">
-            <label for="cost-min">от <input name="price-min" id="cost-min" type="number" value="0"></label>
-            <label for="cost-max">до <input name="price-min" id="cost-max" type="number" value="15000"></label>
+            <label for="cost-min">от <input name="price-min" id="cost-min" type="number" placeholder="0"></label>
+            <label for="cost-max">до <input name="price-max" id="cost-max" type="number" placeholder="15 000"></label>
           </div>
         </div>
       </fieldset>
@@ -99,131 +99,139 @@
         Показать
       </button>
     </form>
-  </div>
-</aside>
+  </aside>
 
-<main class="catalog container">
-  <h2 class="catalog__title visually-hidden">Каталог шаблонов</h2>
-  <header class="sort">
-    <h3 class="sort__title">Сортировать: </h3>
-    <ul class="sort_list">
-      <li class="sort__item sort__item--active">
-        <a class="sort__value" href="#">По цене</a>
-      </li>
-      <li class="sort__item">
-        <a class="sort__value" href="#">По типу</a>
-      </li>
-      <li class="sort__item">
-        <a class="sort__value" href="#">По названию</a>
-      </li>
-      <li class="sort__item sort__item--arrow">
-        <a class="sort__value" href="#" aria-label="Стрелка меньше">
-          <svg class="sort__icon sort__icon--down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-            <path fill="#231F20" d="M5.5 10L0 0h11" />
-          </svg>
-        </a>
-        <a class="sort__value" href="#" aria-label="Стрелка больше">
-          <svg class="sort__icon sort__icon--up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-            <path fill="#231F20" d="M5.5 10L0 0h11" />
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </header>
-  <section class="patterns">
-    <h3 class="patterns__title">Шаблоны:</h3>
-    <ul class="patterns__list">
-      <li class="pattern patterns__item">
-        <img class="pattern__img" src="img/catalog/sedona.jpg" width="360" height="576" alt="Сайт для туристов Sedona">
-        <div class="pattern__card">
-          <h4 class="pattern__title">
-            <a class="pattern__link" href="#">Sedona</a>
-          </h4>
-          <p class="pattern__description">
-            Информационный сайт для туристов
-          </p>
-          <a class="button pattern__button" href="#">9 900 руб.</a>
-        </div>
-      </li>
-      <li class="pattern patterns__item">
-        <img class="pattern__img" src="img/catalog/pink.jpg" width="360" height="576" alt="Лендинг приложения для iOS и Android Pink App">
-        <div class="pattern__card">
-          <h4 class="pattern__title">
-            <a class="pattern__link" href="#">Pink App</a>
-          </h4>
-          <p class="pattern__description">
-            Продуктовый лендинг приложения для iOS и Android
-          </p>
-          <a class="button pattern__button" href="#">9 900 руб.</a>
-        </div>
-      </li>
-      <li class="pattern patterns__item">
-        <img class="pattern__img" src="img/catalog/barbershop.jpg" width="360" height="576" alt="Сайт салона красоты. Для мужчин Barbershop">
-        <div class="pattern__card">
-          <h4 class="pattern__title">
-            <a class="pattern__link" href="#">Barbershop</a>
-          </h4>
-          <p class="pattern__description">
-            Сайт салона красоты. Для мужчин, да.
-          </p>
-          <a class="button pattern__button" href="#">9 900 руб.</a>
-        </div>
-      </li>
-      <li class="pattern patterns__item">
-        <img class="pattern__img" src="img/catalog/mishka.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек MISHKA">
-        <div class="pattern__card">
-          <h4 class="pattern__title">
-            <a class="pattern__link" href="#">Barbershop</a>
-          </h4>
-          <p class="pattern__description">
-            Интернет-магазин вязаных игрушек
-          </p>
-          <a class="button pattern__button" href="#">9 900 руб.</a>
-        </div>
-      </li>
-      <li class="pattern patterns__item">
-        <img class="pattern__img" src="img/catalog/aplus.jpg" width="360" height="576" alt="Лендинг курсов повышения квалификации A Plus">
-        <div class="pattern__card">
-          <h4 class="pattern__title">
-            <a class="pattern__link" href="#">A Plus</a>
-          </h4>
-          <p class="pattern__description">
-            Лендинг курсов повышения квалификации
-          </p>
-          <a class="button pattern__button" href="#">9 900 руб.</a>
-        </div>
-      </li>
-      <li class="pattern patterns__item">
-        <img class="pattern__img" src="img/catalog/kvast.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса КВАСТ">
-        <div class="pattern__card">
-          <h4 class="pattern__title">
-            <a class="pattern__link" href="#">КВАСТ</a>
-          </h4>
-          <p class="pattern__description">
-            Промо-сайт производителя крафтового кваса
-          </p>
-          <a class="button pattern__button" href="#">9 900 руб.</a>
-        </div>
-      </li>
-    </ul>
-  </section>
-  <footer class="pagination">
-    <ul class="pagination__list">
-      <li class="pagination__item">
-      <a class="pagination__link pagination__link--active" href="#" aria-label="Переход на страницу №1">1</a>
-    </li>
-      <li class="pagination__item">
-        <a class="pagination__link" href="#" aria-label="Переход на страницу №2">2</a>
-      </li>
-      <li class="pagination__item">
-        <a class="pagination__link" href="#" aria-label="Переход на страницу 3">3</a>
-      </li>
-      <li class="pagination__item">
-        <a class="pagination__link pagination__link--next" href="#" aria-label="Переход на следующую страницу">Следующая</a>
-      </li>
-    </ul>
-  </footer>
-</main>
+  <main class="catalog container">
+    <h2 class="catalog__title visually-hidden">Каталог шаблонов</h2>
+    <header class="sort">
+      <h3 class="sort__title">Сортировать: </h3>
+      <ul class="sort_list">
+        <li class="sort__item sort__item--active">
+          <a class="sort__value" href="#">По цене</a>
+        </li>
+        <li class="sort__item">
+          <a class="sort__value" href="#">По типу</a>
+        </li>
+        <li class="sort__item">
+          <a class="sort__value" href="#">По названию</a>
+        </li>
+        <li class="sort__item sort__item--arrow">
+          <a class="sort__value" href="#" aria-label="Стрелка меньше">
+            <svg class="sort__icon sort__icon--down" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                 viewBox="0 0 11 10">
+              <path fill="#231F20" d="M5.5 10L0 0h11"/>
+            </svg>
+          </a>
+          <a class="sort__value" href="#" aria-label="Стрелка больше">
+            <svg class="sort__icon sort__icon--up" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                 viewBox="0 0 11 10">
+              <path fill="#231F20" d="M5.5 10L0 0h11"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <section class="patterns">
+      <h3 class="patterns__title">Шаблоны:</h3>
+      <ul class="patterns__list">
+        <li class="pattern patterns__item">
+          <img class="pattern__img" src="img/catalog/sedona.jpg" width="360" height="576"
+               alt="Сайт для туристов Sedona">
+          <div class="pattern__card">
+            <h4 class="pattern__title">
+              <a class="pattern__link" href="#">Sedona</a>
+            </h4>
+            <p class="pattern__description">
+              Информационный сайт для туристов
+            </p>
+            <a class="button pattern__button" href="#">9 900 руб.</a>
+          </div>
+        </li>
+        <li class="pattern patterns__item">
+          <img class="pattern__img" src="img/catalog/pink.jpg" width="360" height="576"
+               alt="Лендинг приложения для iOS и Android Pink App">
+          <div class="pattern__card">
+            <h4 class="pattern__title">
+              <a class="pattern__link" href="#">Pink App</a>
+            </h4>
+            <p class="pattern__description">
+              Продуктовый лендинг приложения для iOS и Android
+            </p>
+            <a class="button pattern__button" href="#">9 900 руб.</a>
+          </div>
+        </li>
+        <li class="pattern patterns__item">
+          <img class="pattern__img" src="img/catalog/barbershop.jpg" width="360" height="576"
+               alt="Сайт салона красоты. Для мужчин Barbershop">
+          <div class="pattern__card">
+            <h4 class="pattern__title">
+              <a class="pattern__link" href="#">Barbershop</a>
+            </h4>
+            <p class="pattern__description">
+              Сайт салона красоты. Для мужчин, да.
+            </p>
+            <a class="button pattern__button" href="#">9 900 руб.</a>
+          </div>
+        </li>
+        <li class="pattern patterns__item">
+          <img class="pattern__img" src="img/catalog/mishka.jpg" width="360" height="576"
+               alt="Интернет-магазин вязаных игрушек MISHKA">
+          <div class="pattern__card">
+            <h4 class="pattern__title">
+              <a class="pattern__link" href="#">Barbershop</a>
+            </h4>
+            <p class="pattern__description">
+              Интернет-магазин вязаных игрушек
+            </p>
+            <a class="button pattern__button" href="#">9 900 руб.</a>
+          </div>
+        </li>
+        <li class="pattern patterns__item">
+          <img class="pattern__img" src="img/catalog/aplus.jpg" width="360" height="576"
+               alt="Лендинг курсов повышения квалификации A Plus">
+          <div class="pattern__card">
+            <h4 class="pattern__title">
+              <a class="pattern__link" href="#">A Plus</a>
+            </h4>
+            <p class="pattern__description">
+              Лендинг курсов повышения квалификации
+            </p>
+            <a class="button pattern__button" href="#">9 900 руб.</a>
+          </div>
+        </li>
+        <li class="pattern patterns__item">
+          <img class="pattern__img" src="img/catalog/kvast.jpg" width="360" height="576"
+               alt="Промо-сайт производителя крафтового кваса КВАСТ">
+          <div class="pattern__card">
+            <h4 class="pattern__title">
+              <a class="pattern__link" href="#">КВАСТ</a>
+            </h4>
+            <p class="pattern__description">
+              Промо-сайт производителя крафтового кваса
+            </p>
+            <a class="button pattern__button" href="#">9 900 руб.</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <footer class="pagination">
+      <ul class="pagination__list">
+        <li class="pagination__item">
+          <a class="pagination__link pagination__link--active" href="#" aria-label="Переход на страницу №1">1</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#" aria-label="Переход на страницу №2">2</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#" aria-label="Переход на страницу 3">3</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link pagination__link--next" href="#" aria-label="Переход на следующую страницу">Следующая</a>
+        </li>
+      </ul>
+    </footer>
+  </main>
+</div>
 <footer class="footer">
   <h2 class="footer__title visually-hidden">Контактная информация</h2>
   <section class="map">
